@@ -1,0 +1,29 @@
+/* JobsList.css */
+.job-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .job-item {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(159, 255, 81, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .job-item:hover {
+    transform: scale(1.05); /* Scale the box on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a larger shadow on hover for depth */
+  }
+  .job-item p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Add any additional styling as needed */
+  

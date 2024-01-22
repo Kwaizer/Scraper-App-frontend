@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {  createBrowserRouter, RouterProvider, BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import Jobs from './pages/Jobs';
+import Home from './pages/Home';
+
+// function App() {
+//   return (
+//     <Router>
+//       <div>
+//         <h1>Welcome to the Job Scraper App</h1>
+//         <p>Choose a site to scrape jobs:</p>
+//         <nav>
+//           <ul>
+//             <li>
+//               <Link to="/jobs?site=Djinni">Djinni</Link>
+//             </li>
+//             <li>
+//               <Link to="/jobs?site=Dou">Dou</Link>
+//             </li>
+//           </ul>
+//         </nav>
+//         <hr />
+//         <Routes>
+//           <Route path="/jobs" element={<Jobs />} />
+//         </Routes>
+//       </div>
+//     </Router>
+//   );
+// }
 
 function App() {
+  // initialize a browser router
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/jobs",
+      element: <Jobs />,
+    },
+  ])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <RouterProvider router={router} />
+  )
 }
 
 export default App;
