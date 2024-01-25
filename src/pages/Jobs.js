@@ -19,7 +19,6 @@ function Jobs() {
 
   return (
     <div>
-      <h1>Your App Header</h1>
       <JobsList data={data} />
     </div>
   );
