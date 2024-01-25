@@ -1,5 +1,5 @@
 import React from 'react';
-import {  createBrowserRouter, RouterProvider, BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 const Home = () => {
   return (
     <div>
@@ -15,10 +15,6 @@ const Home = () => {
              </li>
            </ul>
          </nav>
-         <hr />
-         {/* <Routes>
-           <Route path="/jobs" element={<Jobs />} />
-         </Routes> */}
        </div>
   );
 }
