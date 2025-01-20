@@ -1,0 +1,41 @@
+/* Center the content on the page */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Style the container for the buttons */
+.button-container {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+/* Style for the buttons */
+.nav-button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.nav-button:active {
+  background-color: #004494;
+  transform: scale(0.98);
+}

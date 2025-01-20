@@ -8,7 +8,7 @@ const Header = () => {
       <h1>Job Scraper App</h1>
       <nav>
         <a href="/">Home</a>
-        <a href="/about">About</a>
+        <a href="https://github.com/Kwaizer/Scraper-App-backend.git" target="blank">About</a>
         {/* Add more navigation links as needed */}
       </nav>
     </header>
